@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+/*����*/
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+/* font-family: 'Cinzel', serif; */
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+body, html {
+overflow-x: hidden;
+}
+
+@media ( max-width : 850px) { /*720px 이하인경우에만 적용*/
+.head2 {
+display: none;
+}
+.logo_and_menu {
+/*로고랑 메뉴바 넣을 공간*/
+width: 70vmin;
+height: 11.1vmin;
+}
+
+.menubar {
+border: none;
+font-family: 'Nanum Gothic', sans-serif;
+font-size: 2vmin;
+font-weight: bold;
+z-index: 6;
+position: absolute;
+
+margin: 0vmin 0vmin 0vmin 8vmin;
+}
+.menubar ul {
+background: #ffffff;
+width: 88vmin;
+height: auto;
+list-style: none;
+margin: 0;
+padding: 0;
+
+}
+.menubar li {
+
+margin: 0vmin auto;
+/* �޴��� �׵θ� ���� ���� ������. margin: �� ������ �Ʒ� ����; */
+width: 20%;
+height: auto;
+}
+.menubar li a {
+background: #000000;
+color: #ffffff;
+display: block;
+font-weight: normal;
+line-height: 11.1vmin;
+margin: 0vmin;
+text-align: center;
+text-decoration: none;
+}
+.menubar li:hover ul {
+border-top: 0.2vmin solid #00e73c;
+}
+.menubar ul li:hover a {
+background: rgb(71, 71, 71);
+color: #FFFFFF;
+text-decoration: none;
+}
+.menubar li ul {
+background: rgb(109, 109, 109);
+/* �����ÿ��� ���Ӹ޴��� �Ⱥ��̰� �ϱ� */
+display: none;
+height: auto;
+width: 17.5vmin;
+}
+.menubar li:hover ul {
+/* ���콺 Ŀ�� �ø��� ���Ӹ޴� ���̰� �ϱ� */
+display: block;
+}
+.menubar li li {
+background: rgb(109, 109, 109);
+display: block;
+
+margin: 0vmin auto;
+width: 17.5vmin;
+}
+.menubar li:hover li a {
+background: none;
+}
+.menubar li ul a {
+display: block;
+height: 4vmin;
+font-size: 1.4vmin;
+font-style: normal;
+/*�� ������ �Ʒ� ����; */
+padding-left: 1.5vmin;
+text-align: left;
+/*drop bar ũ������*/
+line-height: 4vmin;
+}
+.menubar li ul a:hover, .menubar li ul li:hover a {
+background: rgb(71, 71, 71);
+border: 0vmin;
+color: #ffffff;
+text-decoration: none;
+}
+.background {
+width: 100%;
+max-width: 100%;
+height: auto;
+box-shadow: 0vmin 1.0vmin 1.5vmin 0vmin gray;
+}
+
+img {
+/* image의 style을 지정해줄때 width가 아닌 max-width로 잡아주면 원래 이미지의 크기보다 커지지않는다. */
+width: 100%;
+height: auto;
+position: relative;
+z-index: -3;
+}
+
+.introduction {
+  width: 100%;
+  height: auto;
+  margin-top: 5vmin;
+  font-size: 2.2vmin;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  position: relative;
+}
+
+.introduction span {
+  border-bottom: 0.2vmin solid #00e73c;
+}
+
+.gray_font {
+  font-size: 1.8vmin;
+  color: #7b7b7b;
+  font-weight: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*---------------------유용사이트-------------------*/
+.TextBox {
+width: 100%;
+margin: 0px auto;
+margin-top: 15px;
+text-align: center;
+}
+
+.title {
+font-family: 'Noto Sans KR', sans-serif;
+margin-top: 3em;
+font-size: 3.3vmin;
+font-weight: bold;
+color: #3d3d3d;
+text-align: center;
+}
+
+.title span {
+border-bottom: 0.38vmin solid #00e73c;
+}
+
+.SiteName p {
+font-family: 'Noto Sans KR', sans-serif;
+margin-top: 4.2vmin;
+font-size: 2.5vmin;
+color: #3d3d3d;
+line-height: 0vmin;
+text-align: center;
+}
+
+.SiteName a {
+text-decoration: none;
+}
+
+.SiteName a:link {
+color: black;
+}
+
+.SiteName a:visited {
+color: black;
+}
+
+.SiteName a:hover {
+color: gray;
+}
+
+.SiteName a:active {
+color: gray;
+}
+
+.explanation {
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 2.0vmin;
+color: #7b7b7b;
+margin-top: 3vmin;
+text-align: center;
+}
+
+/*------------------------------------------*/
+.bbs a {
+color: #000000;
+text-decoration: none;
+}
+
+.bbs a:hover {
+color: #000000;
+border-bottom: 2px solid #00e73c;
+text-decoration: none;
+}
+}
+
+@media ( min-width : 850px) {
+.head {
+display: none;
+}
+}
+
+
+
+ /*-------------------------------------------------------------------*/
+
+.head2 {
+/*상단 검은메뉴*/
+width: 100%;
+max-width: 100%;
+height: 11.1vmin;
+background-color: #000000;
+margin: 0vmin auto;
+}
+
+.head {
+/*상단 검은메뉴*/
+width: 100%;
+max-width: 100%;
+height: 11.1vmin;
+background-color: #000000;
+margin: 0vmin auto;
+}
+
+.home {
+/*홈이랑 로그인부분*/
+width: 100%;
+height: auto;
+float: right;
+text-align: right;
+padding: 2vmin;
+margin-right: 5vmin;
+color: #ffffff;
+font-size: 2.0vmin;
+z-index: 5;
+position: absolute;
+}
+
+.home a {
+/*홈이랑 로그인 글씨부분*/
+text-decoration: none;
+color: white;
+font-size: 2.0vmin;
+}
+
+.home a: hover {
+/*링크색상같음*/
+text-decoration: none;
+color: #9F9C9C;
+}
+
+.logo_and_menu {
+/*로고랑 메뉴바 넣을 공간*/
+width: 112.5vmin;
+height: 11.1vmin;
+margin: 0vmin auto;
+}
+
+.main_logo img {
+width: 100%;
+height: 11.1vmin;
+z-index: 100;
+}
+
+.main_menu {
+/*상단바 넣을공간*/
+width: 88vmin;
+height: 11.1vmin;
+float: right;
+}
+
+.logo_and_tel {
+/*하단로고랑전화번호넣을공간*/
+width: 113vmin;
+height: 7.9vmin;
+margin: 3.4vmin auto;
+}
+
+.bottom_logo {
+/*하단로고넣을공간*/
+width: 22vmin;
+height: 7.9vmin;
+float: left;
+}
+
+.bottom_logo_img {
+height: 7.9vmin;
+width: 20vmin;
+}
+
+.bottom_tel {
+/*하단전화번호넣을공간*/
+width: 86.4vmin;
+height: 7.9vmin;
+padding: 1.7vmin;
+margin-left: 5vmin;
+text-align: center;
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 1.4vmin;
+color: #828282;
+}
+/*-----------------------------�޴���-------------------------*/
+.menubar {
+border: none;
+font-family: 'Nanum Gothic', sans-serif;
+font-size: 2vmin;
+font-weight: bold;
+z-index: 6;
+position: absolute;
+}
+
+.menubar ul {
+background: #ffffff;
+width: 88vmin;
+height: auto;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.menubar li {
+float: left;
+/* �޴��� �׵θ� ���� ���� ������. margin: �� ������ �Ʒ� ����; */
+width: 20%;
+height: auto;
+}
+
+.menubar li a {
+background: #000000;
+color: #ffffff;
+display: block;
+font-weight: normal;
+line-height: 11.1vmin;
+margin: 0vmin;
+text-align: center;
+text-decoration: none;
+}
+
+.menubar li:hover ul {
+border-top: 0.2vmin solid #00e73c;
+}
+
+.menubar ul li:hover a {
+background: rgb(71, 71, 71);
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.menubar li ul {
+background: rgb(109, 109, 109);
+/* �����ÿ��� ���Ӹ޴��� �Ⱥ��̰� �ϱ� */
+display: none;
+height: auto;
+width: 17.5vmin;
+}
+
+.menubar li:hover ul {
+/* ���콺 Ŀ�� �ø��� ���Ӹ޴� ���̰� �ϱ� */
+display: block;
+}
+
+.menubar li li {
+background: rgb(109, 109, 109);
+display: block;
+float: none;
+width: 17.5vmin;
+}
+
+.menubar li:hover li a {
+background: none;
+}
+
+.menubar li ul a {
+display: block;
+height: 4vmin;
+font-size: 1.4vmin;
+font-style: normal;
+/*�� ������ �Ʒ� ����; */
+padding-left: 1.5vmin;
+text-align: left;
+/*drop bar ũ������*/
+line-height: 4vmin;
+}
+
+.menubar li ul a:hover, .menubar li ul li:hover a {
+background: rgb(71, 71, 71);
+border: 0vmin;
+color: #ffffff;
+text-decoration: none;
+}
+
+/*------------------------------------------*/
+.background {
+width: 100%;
+max-width: 100%;
+height: auto;
+box-shadow: 0vmin 1.0vmin 1.5vmin 0vmin gray;
+}
+
+img {
+/* image의 style을 지정해줄때 width가 아닌 max-width로 잡아주면 원래 이미지의 크기보다 커지지않는다. */
+width: 100%;
+height: auto;
+position: relative;
+z-index: -3;
+}
+
+.introduction {
+width: 100%;
+height: auto;
+margin-top: 5vmin;
+font-size: 1.8rem;
+text-align: center;
+color: #000000;
+font-weight: bold;
+font-family: 'Cinzel', serif;
+position: relative;
+}
+
+.introduction span {
+border-bottom: 0.2vmin solid #00e73c;
+}
+
+.gray_font {
+font-size: 1.4rem;
+color: #7b7b7b;
+font-weight: normal;
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*---------------------유용사이트-------------------*/
+.TextBox {
+width: 100%;
+margin: 0px auto;
+margin-top: 15px;
+text-align: center;
+}
+
+.title {
+font-family: 'Noto Sans KR', sans-serif;
+margin-top: 3em;
+font-size: 3.3vmin;
+font-weight: bold;
+color: #3d3d3d;
+text-align: center;
+}
+
+.title span {
+border-bottom: 0.38vmin solid #00e73c;
+}
+
+.SiteName p {
+font-family: 'Noto Sans KR', sans-serif;
+margin-top: 4.2vmin;
+font-size: 2.5vmin;
+color: #3d3d3d;
+line-height: 0vmin;
+text-align: center;
+}
+
+.SiteName a {
+text-decoration: none;
+}
+
+.SiteName a:link {
+color: black;
+}
+
+.SiteName a:visited {
+color: black;
+}
+
+.SiteName a:hover {
+color: gray;
+}
+
+.SiteName a:active {
+color: gray;
+}
+
+.explanation {
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 2.0vmin;
+color: #7b7b7b;
+margin-top: 3vmin;
+text-align: center;
+}
+
+/*------------------------------------------*/
+.bbs a {
+color: #000000;
+text-decoration: none;
+}
+
+.bbs a:hover {
+color: #000000;
+border-bottom: 2px solid #00e73c;
+text-decoration: none;
+}
+#wrap {
+            width: 800px;
+            margin: 0 auto 0 auto;    
+        }
+    
+ #detailBoard{
+            text-align :center;
+        }
+        
+        #title{
+            height : 16;
+            font-family :'돋움';
+            font-size : 12;
+            text-align :center;
+            background-color: #F7F7F7;
+        }
+        
+        #btn{
+            font-family :'돋움';
+            font-size : 14;
+            text-align :center;
+        }
+ .filebox input[type="file"] { 
+ position: absolute; 
+ width: 1px; height: 1px; 
+ padding: 0; margin: -1px;
+  overflow: hidden; clip:rect(0,0,0,0); 
+  border: 0; } 
+  .filebox label { 
+  display: inline-block;
+   padding: .5em .75em; color: #999;
+   font-size: inherit; line-height: normal; 
+   vertical-align: middle; background-color: #fdfdfd; 
+   cursor: pointer; border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2; 
+    border-radius: .25em; 
+    } /* named upload */ 
+   
+    .filebox .upload-name { 
+    display: inline-block; 
+    padding: .5em .75em; /* label의 패딩값과 일치 */ 
+    font-size: inherit; font-family: inherit; 
+    line-height: normal; vertical-align: middle; 
+    background-color: #f5f5f5;
+     border: 1px solid #ebebeb; 
+     border-bottom-color: #e2e2e2;
+      border-radius: .25em; 
+      -webkit-appearance: none; 
+      /* 네이티브 외형 감추기 */
+       -moz-appearance: none; appearance: none; 
+       }
+  
+  
+

@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+h1{
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+}
+.text {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 40vh;
+  right: 11vw;
+  text-align: center;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position:absolute;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.you{
+    color: black;
+    font-style: italic;
+    font-size: 4.0em;
+}
+.stranger{
+  color: #8e44ad;
+  font-size: 4.0em;
+}
+
+.ycert {
+  color: #2980b9;
+  font-size: 4.0em;
+}
+
+.emote{
+  color: #FF8000;
+  font-size: 4.0em;
+}
+/*
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+} */
+@media screen and (max-width: 50em)
+{
+  .word{
+    width:50vw;
+    text-align:center;
+  }
+  .text {
+    top: 40vh;
+    right: 17vw;
+  }
+  .you{
+      font-size: 2em;
+  }
+  .stranger{
+    font-size: 2em;
+  }
+
+  .ycert {
+  font-size: 2em;
+
+  }
+
+  .emote{
+    font-size: 2em;
+  }
+}
